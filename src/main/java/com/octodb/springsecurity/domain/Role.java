@@ -11,13 +11,9 @@ public class Role {
     @Id
     @GeneratedValue(strategy = IDENTITY)
     private Long id;
-    private String roleName;
+    private String name;
 
     public Role (){}
-
-    public Role(String roleName) {
-        this.roleName = roleName;
-    }
 
     public Long getId() {
         return id;
@@ -27,11 +23,11 @@ public class Role {
         this.id = id;
     }
 
-    public String getRoleName() {
-        return roleName;
+    public String getName() {
+        return name;
     }
 
-    public void setRoleName(String roleName) {
-        this.roleName = roleName;
+    public void setName(String name) {
+        this.name = name;
     }
 }
